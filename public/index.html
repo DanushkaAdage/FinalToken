@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 
+  <head>
+    <meta charset="utf-8" />
+   <linl rel="navbar" href="navbar.js"></linl>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+   
+    <title>Coin DB Faucet</title>
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    <div class="container">
+      <main role="main" class="container">
+        <div class="jumbotron">
+          <h1>Coin DB Faucet</h1>
+          <div className="row" style={{ paddingTop: "30px" }}>
+      
+            <div className="row" style={{ paddingLeft: "40px" }}>
+              <p>Welcome to faucet, we give you test tokens to add your wallet. 
+                please enter your wallet address</p>
+            </div>
+            <br></br>
+            <div className="row" style={{ paddingLeft: "40px" }}>
+              <p>Coin: <p>
+            </div>
+            <br></br>
+            <div className="row" style={{ paddingLeft: "40px" }}>
+              <p>Coin balance in the account : </p>
+            </div>
+            <br></br>
+            <div className="row" style={{ paddingLeft: "40px" }}>
+              <input value="0"
+               placeholder="Add your address "
+               value={inputFieldChange}
+               onChange={changeInpitField} />
+              
+              <button className="btn btn-secondary" onClick={onSubmit} >Get Token</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
